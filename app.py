@@ -10,11 +10,16 @@ CORS(app)
 def home():
     return 'Backend is running ✅'
 
+
 @app.route('/api/listings')
 def get_listings():
-    with open(os.path.join('data', 'listings.json')) as f:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_dir, 'data', 'listings.json')
+    with open(file_path) as f:
         listings = json.load(f)
     return jsonify(listings)
+
+
 
 if __name__ == '__main__':
     # ✅ This allows Render to assign the correct port
