@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "name": "Ritika Shah",
+      "experience": "5 years",
+      "location": "Mumbai"
+    },
+    {
+      "id": 2,
+      "name": "Anil Mehta",
+      "experience": "3 years",
+      "location": "Delhi"
+    },
+    {
+        "id": 3,
+        "name": "Sofia D'Souza",
+        "experience": "7 years",
+        "location": "Bangalore"
+      }
+      
+  ]
+  
